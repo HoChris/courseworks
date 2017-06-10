@@ -1,0 +1,32 @@
+1. SELECT DISTINCT s.SalesID, s.FirstName, s.Lastname 
+	FROM SalesPeople s 
+	JOIN Studios st USING(SalesID);
+	
+2.SELECT s.SalesID, s.LastName 
+	FROM SalesPeople s JOIN Members m 
+	USING(SalesID) 
+	WHERE Birthday LIKE "%-07-%";
+	
+3.SELECT DISTINCT s.StudioName 
+	FROM Studios s 
+	JOIN Titles t 
+	WHERE NOT (t.Genre = "jazz)
+	
+4. SELECT DISTINCT tr.TrackTitle, s.StudioName 
+	FROM Studios s JOIN Tracks tr
+	ORDER BY s.StudioID;
+	
+5a.	SELECT tr.TrackTitle, m.FirstName, m.Lastname 
+	FROM Tracks tr 
+	JOIN Titles USING(TitleID) JOIN Artists a USING(ArtistID) JOIN XrefArtistsMembers x USING(ArtistID) JOIN Members m USING(MemberID)
+	WHERE (m.FirstName ="Bryce" AND m.LastName = "Sanders");
+
+5b. SELECT tr.TrackTitle, m.FirstName, m.Lastname 
+	IF ((m.FirstName ="Bryce" AND m.LastName = "Sanders"), "yes", "no")
+	FROM Tracks tr 
+	JOIN Titles USING(TitleID) JOIN Artists a USING(ArtistID) JOIN XrefArtistsMembers x USING(ArtistID) JOIN Members m USING(MemberID)
+	WHERE (m.FirstName ="Bryce" AND m.LastName = "Sanders");
+	
+6. SELECT m.FirstName, m.LastName, 
+	CASE WHEN WorkPhone ISNOT NULL THEN m.WorkPhone ELSE HomePhone END AS "DayTime Phone" 
+	FROM Members m;

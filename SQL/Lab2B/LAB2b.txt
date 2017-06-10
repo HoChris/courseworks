@@ -1,0 +1,19 @@
+1. show me the LastName and Initials  From the whole  Salespeople Table.
+
+2.show me the Tracks  using the TrackTitle to sort them in ascending order.
+
+3.show me the FirstNames of people after the name Maria from the the Members table 
+
+4.Show me the Lastname of people who don't have a recorded email address from Members table 
+
+5.Show me using the last name from the members table where the firstname is Roberto.
+
+6.  SELECT LastName, MemberID FROM Members WHERE SalesID != 2;
+
+7.  SELECT Title From Titles WHERE Genre = "alternative";
+
+8. SELECT Title From Titles WHERE Genre != "jazz";
+
+9. SELECT DISTINCT Genre From Titles WHERE Genre IS NOT NULL;
+
+10. SELECT Region FROM Members WHERE (Gender="m" AND City LIKE "A%");

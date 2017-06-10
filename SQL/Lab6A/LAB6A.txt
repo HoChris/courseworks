@@ -1,0 +1,29 @@
+1.Use Views to get tables
+
+2a.inner
+ b.outer
+
+ 3.nested
+
+4.this type of subquery is dependent on data from the outer query.
+
+5. IN tests if an expression matches any item in the list
+	EXIST checks for the existence of data in the subquery.
+
+6. the inner query is a SELECT clause subquery and must return a single value. the Inner query returns a list and causes error.
+
+7a.output: make			model
+		Lincoln		Town Car
+		Ford		Crown Victoria
+ b.output: make			model
+		Toyota		Corolla
+		Toyota		Prius
+
+8. Shows a list of Salespeople who represents a studio and members.
+
+9. Shows how many artist names start "The".
+
+10. Shows a list of Artist names that have more then 2 members in the band.
+
+11. SELECT a.ArtistName FROM Artists a WHERE a.ArtistID IN(
+SELECT artistid FROM xrefartistsmembers x WHERE x.memberID IN(SELECT memberID FROM members WHERE Gender = "f"));

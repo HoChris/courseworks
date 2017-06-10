@@ -1,0 +1,18 @@
+10.
+SELECT CONCAT_WS(" ",FirstName, LastName), (datediff(curdate(), birthday)/365.25) AS YEARS FROM Members m
+WHERE Gender ='f' GROUP BY Gender;
+
+12.
+ CREATE TABLE Courses(
+  courseID INT PRIMARY KEY AUTO_INCREMENT UNIQUE,
+  courseName VARCHAR(17) NULL,
+  instructorCIN BIGINT NULL,
+  numberOfUnits INT NULL
+ )
+ ;
+ 
+ INSERT INTO Courses VALUES (courseID,'course1',123456789,7)
+ INSERT INTO Courses VALUES (courseID,'course2',123456789,7)
+ INSERT INTO Courses VALUES (courseID,'course3',123984566,7)
+ INSERT INTO Courses VALUES (courseID,'course4',033333333,7)
+ 

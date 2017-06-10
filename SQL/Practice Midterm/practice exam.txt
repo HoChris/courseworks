@@ -1,0 +1,29 @@
+1. Relational Model is used by sql
+2. The DBMS has to be able to provide efficient, reliable, convenient, and safe multi-user storage of and access to massive amounts of persistent data.
+3.  SalesID: 5
+	Lastname: Washington
+	Firstname: Jeff
+	Initials: jbw
+	Base: 50
+	Supervisor: 5
+4.5100
+5.Natural Join will be determined by SQL and match only if both tables have the same datafield AND same value of the data at every match.
+6.the first query only results in showing studios that have titles that are not in the genre of Jazz. The second query results in showing studio that have not recorded any jazz titles at all.
+7. this query results in one column named 'Max' showing the longest first/last name of the member in the order of Member ID
+8. this query will result in the last/ first names and artist names of all members that do not have a main contact person
+9.SELECT SUM(DATEDIFF(CURDATE(),m.BirthDay)/356.25) AS "Sum of all Ages"  FROM Members m;
+10.SELECT s.lastname, st.StudioName FROM Salespeople s LEFT JOIN Studios st ON s.SalesID = st.SalesID);
+11.SELECT DISTINCT tr.TrackTitle, IF(a.ArtistName='the bullets','yes',' no') FROM Tracks tr LEFT JOIN titles t ON(tr.titleID=t.titleID) JOIN Artists a ON(t.ArtistID=a.ArtistID);
+
+12.3 tables should be location , manufacturers, and salespeople
+location should have state locations and what types of scissors they carry and inventory on each. Manufacturers would have contact information and what type of scissors they process. Last, Salespeople would have personal information, location stationed at, and they hours they work.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+Part I, 3 points each
+
+1. 
+a) 	DBMS is a way to provide efficient, reliable, convenient, and safe multi-user storage of and access to massive amounts of persistent data. 
+
+b)	Common DBMS are MySQL, ProstgreSQL which are free and open source. A commercially used one is Oracle.
+
+2. 	Schemas.
+
+3.	It means the database has some sort of organization using a set of rules.
+
+4. 	It means the data is stored in a way that it doesn't get lost or is temporary in any sort of way, thus makes it permanent
+
+5. 	This means that SQL can produce specified data from the database by describing what the data the users wants.
+
+6. 	The Members table contains and represents one human being
+
+7. 	You need to check the Studios table to refer to that information.
+
+8. 	It is in the Titles table.
+
+9. 	The Tracks table has the lengths of the songs.
+
+10. Yes there is one field TitleID in both the Titles and Tracks tables.
+
+
+Part II, 4 points each
+
+11. This means that the Title is produced or Originated from that specific Studio.
+
+12. What does it mean if a salesperson's salesID appears as the salesID for a record in the members table?
+	The member has a specific salesperson that is affiliated with that specific member.
+
+13. The tables that need to be accessed are Studios, Titles, and Tracks.
+	The Fields that are required are TrackNum, TitleID, and StudioID.
+
+14. Each Table is required to gain access to specific fields that contain the data. The Artist of one Bullet member which has an ArtistID->XrefArtsitsMembers table->MemberID->Members table->Firstname and Lastname.

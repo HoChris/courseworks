@@ -1,0 +1,17 @@
+1. Insertion commands, Deletion commands, Update commands
+2. Refers to Doing the entire transaction all at once or not at all.
+3. You need to update Tracks and Studios table to account for the records in the new title because of foreign keys.
+4. This is necessary to reduce number of errors while the transaction happens.
+5a. Persistent in the context that if you alter the data, you must update so the data is self-consistent and leave no orphan or inconsistent totals.
+5b. Durability when transaction is finished, the results persist.
+5c. The update commands insure durability.
+6. Deletion of data from the entire table.
+7a. Script
+7b. source myfile.sql;
+8. adds a new records with the assigned values.
+9. changes the base value assigned to "Liz Montbatten".
+10. Deletion of the table "Monarchs" from the schema.
+11. 
+Begin;
+UPDATE Members
+SET City = 'Alvarez' WHERE City = 'Alverez';

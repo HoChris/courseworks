@@ -1,0 +1,21 @@
+1. The primary ket is StudioID
+
+ 2. It isn't because more than one person can have the same last name
+ 
+ 3. That key is the TitleID.  It will use both the TitleID and TrackNUM so insure that each track is unique.
+
+ 4. ArtistID contains the information on the ArtistName,City, etc. MembersID contains each Individual member of the Artist like First name and such. The XrefArtistsMembers table is used to Access the detail information of and individual from the related Artist table.
+ 
+ 5a. The primary key to the XrefArtistMembers table is RespParty.
+ 5b. 
+ One table contains the ArtistID which has the information, which uses the XrefArtistsMembers to match the MemberID and ArtistID 
+ with the condition if those IDs Match the RespParty returns yes/no that when they do match to display the correct primary artist contact information from the MemberID
+ table
+ 
+ 6a. No because the SalesID and the Supervisor will not match and according to the table the key refers to both fields SalesID=5 != Supervisor=1
+ 6b.
+ 
+ SELECT (NULL IS NOT NULL) != (NULL = (NOT NULL));
+ SELECT      FALSE != (NULL= NULL);
+ SELECT  	FALSE !=NULL;
+ SELECT 		NULL;

@@ -1,0 +1,14 @@
+1.
+SELECT lastName FROM members m WHERE Region='CA' UNION SELECT StudioName FROM studios s WHERE Region='CA';
+
+2.SELECT memberID, birthday FROM Members WHERE Region='VT' AND birthday < ALL(SELECT birthday FROM Members WHERE Region='NY');
+
+
+3.
+SELECT tr.trackTitle FROM Tracks tr JOIN Titles t ON(tr.TitleID = t.TitleID) JOIN Artists a ON(t.ArtistID = a.ArtistID) WHERE a.EntryDate > "2003-10-01";
+
+4.
+SELECT tr.trackTitle FROM Tracks tr WHERE tr.TitleID IN (SELECT t.titleID FROM Titles t WHERE t.ArtistID IN (SELECT a.ArtistID FROM Artists a WHERE a.EntryDate > "2003-10-01"));
+
+5.
+SELECT a.artistname FROM Artists a WHERE a.artistID IN (SELECT t.artistID FROM Titles t WHERE t.StudioID IN (SELECT s.StudioID FROM Studios s WHERE s.studioid = ANY(SELECT t.studioID FROM Titles t WHERE t.artistid = (SELECT a.artistID FROM Artists a WHERE a.artistname ='the bullets'))));

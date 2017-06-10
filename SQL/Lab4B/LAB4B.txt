@@ -1,0 +1,20 @@
+1.SELECT artistname, title FROM artists
+	LEFT JOIN titles USING(artistID);
+2.SELECT s.Firstname AS Subordinate, s.Supervisor 
+	from Salespeople s WHERE s.Supervisor is not null;
+3a. SELECT DISTINCT s.FirstName
+	FROM Salespeople s JOIN Salespeople ss ON(s.SalesID =ss.Supervisor);
+ b. one appeared because he doesn't have a supervisor but supervise other salespeople.
+ c. They appear because these people supervise other salespeople, and not for having a supervisor.
+ 4.SELECT DISTINCT s.SalesID, IF(m.SalesID=s.SalesID,m.MemberID,'No Member Assigned') AS Clients
+	FROM Salespeople s LEFT JOIN Members m USING(SalesID);
+5.  SELECT DISTINCT s.SalesID, s.FirstName
+  FROM Members m
+  LEFT JOIN Salespeople s ON(s.SalesID = m.SalesID)
+   WHERE m.Region !="CA";
+6a.   SELECT DISTINCT s.SalesID, s.FirstName
+   FROM Salespeople s
+   LEFT JOIN Members m ON(s.SalesID = m.SalesID AND m.Region='CA')
+	WHERE m.memberID IS NULL;
+b. It is different because if the salesperson represented one member that was from california then they would not display
+in the result.

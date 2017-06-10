@@ -1,0 +1,21 @@
+
+Section 1
+
+1. This is using Named Column
+2. This is using a Cross join.
+
+Section 2
+
+2. This query will show a list containing Last names and IDs that match ID with the corresponding Salesperson assigned to them.
+3. This query shows a list of both the genre associated with the title of the track in the alphabetical order of genre.
+4. This query shows a list containing the track name and album if it was created by the studio MakeTrax.
+5. This query will show data automatically determined by SQL only if all the datafields match. meaning it will display results only if it has the same exact data in all the selected datefields.
+
+Section 3
+
+6.		SELECT m.FirstName, m.LastName,a.ArtistName From Members m 
+			JOIN XrefArtistsMembers
+				USING(memberID) 
+			JOIN Artists a 
+				USING(ArtistID) 
+				WHERE ArtistName ="The Bullets" ORDER BY m.LastName DESC;

@@ -1,0 +1,22 @@
+1. THey are functions calling other functions within the first calling function.
+
+2. a HAVING clause filters the results from a query after aggregation, Where is before aggregation.
+
+3. Aggregate fucntions: COUNT, SUM, AVG. NON-Aggregate functions:CURDATE, UPPER, Greatest.
+
+4. OUTPUT: Toyota.
+
+5. Filtered for IS NULL results first then Aggregate COUNT "skips" the Nulls 
+
+6. Shows the day of the week which is 11 years from today.
+
+7. Shows How many tracks each album has. 
+
+8. Shows The number of artist that have names that start with "The ...."
+
+9. Shows the number of titles manage by each salesperson
+
+10.
+SELECT COUNT(*) AS 'NUMBER OF SALESPEOPLE'
+FROM Salespeople s JOIN Studios st ON(s.SalesID = st.SalesID)GROUP BY st.SalesID
+HAVING COUNT(*)>1; 

@@ -1,0 +1,39 @@
+1a.
+DELETE FROM Titles WHERE Genre !='Jazz';
+1b.
+Delete the id that belongs to the names from the artist table.
+2.
+INSERT INTO Members Values(5, "ye","ho","123 Ser","Cali","CA","PO Box 1292","USA","6666666666",NULL,NULL,"F","1978-09-10",3);
+
+UPDATE XrefArtistsMembers
+SET ArtistID = (SELECT MemberID FROM Members WHERE FirstName ='ye' AND LastName ="ho")
+WHERE ArtistID =(SELECT ArtistID FROM Artists WHERE artistName = 'Sonata');
+
+3.
+UPDATE Members
+SET Email = (SELECT CONCAT_WS('@',(SELECT LastName),'sonata.org'))
+WHERE (SELECT x.artistid FROM XrefArtistsMembers x JOIN Artists a ON(a.artistid = x.artistid AND a.ArtistName = 'sonata'));
+4.
+CREATE TABLE Products(
+	ItemNumber INT PRIMARY KEY AUTO_INCREMENT UNIQUE ,
+	ItemName VARCHAR(15) NULL,
+	Price FLOAT(6,2) NULL,
+	SupplierID INT NULL);
+
+INSERT INTO Products Values(ItemNumber,'Mouse',39.99,1);
+INSERT INTO Products Values(ItemNumber,'Keyboard',69.99,2);
+INSERT INTO Products Values(ItemNumber,'Monitor',150.00,1);
+INSERT INTO Products Values(ItemNumber,'PC tower',80.00,4);
+INSERT INTO Products Values(ItemNumber,'Apple',1.25,3);
+5.
+CREATE TABLE Suppliers(
+	SupplierID INT PRIMARY KEY AUTO_INCREMENT UNIQUE,
+	SupplierName VARCHAR(17) NULL,
+	ContactPhone VARCHAR(12) NULL
+	);
+	
+INSERT INTO Suppliers Values(SupplierID,'Frys','111-345-6543');
+INSERT INTO Suppliers Values(SupplierID,'BestBuy','555-555-5555');
+INSERT INTO Suppliers Values(SupplierID,'Costco','987-345-7854');
+6.
+SELECT SupplierName,(SELECT COUNT(*)FROM Products WHERE ) p JOIN Suppliers s GROUP BY s.SupplierID ;

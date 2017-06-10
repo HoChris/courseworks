@@ -1,0 +1,35 @@
+
+1) inner Join matches data fields only if it appears on both tables, Outer Join joins 2 tables with one side always showing up at least once (left/right)
+
+2) Able to join between 2 or more instances of the same table, and is useful for modelling hierarchical relationships withing the same table.
+
+3) They are needed because when self joining you need to distinguish between what table you need to access.
+
+4) This is achieved by joining said tables and looking at setting a condition if one data field matches other data field in the second table.
+
+5) The student is JOIN ON is wrong, if you are looking for the salespeople then you need to look at the same table which is salespeople and not from the Members table. Bryce sanders shouldn
+t be in members table if he is a salesperson.
+
+6) the first query will list any artist that were not born in the 1960s while the second one disqualify any artist that has even one member born in the 1960s.
+What would be true of the result of these 2 queries would show only artist that do not have any member in the "band" that was born in the 1960s. So they some would show up in the first and not in the second.
+
+7) She does not include the sales id anywhere in the query.
+
+8)Since the 1st query is Member Left JOIN XRefArtistsMembers this will display member lastname and artist name data fields in the Members table. The Second Query uses a "normal" JOIN but again only requires the same data fields of the first query so the same results come up.
+
+
+9) The query will return Genre and Title from the Title table. The order of the list will be according to the Genre.
+
+10) The query returns a joined table from genre and titles and displays genre and title. The list will be ordered according to by genre from the genre table.
+
+11) The Query will return a left joined table which displays genre and title. The list will only display results Genre that dont have a title.
+
+12)The query returns the sales id, last name of a salesperson, and the studio that they work with. For each result will list the studio name and if the salesperson is not associated with a studio it will display "none". 
+
+13) The query will return any sales ID that is from the region of "CA" but not associated with a studio.
+
+14) mysql> SELECT DISTINCT t.title AS "Tracks with Real AUDIO"FROM Tracks tr JOIN Titles t ON(tr.titleID=t.titleID) WHERE tr.realaud !=0;
+
+or
+
+SELECT tr.tracktitle AS "Tracks with Real AUDIO" FROM Tracks tr JOIN Tracks trr ON(tr.tracktitle=trr.tracktitle) WHERE tr.realaud !=0;
