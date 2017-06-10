@@ -1,0 +1,31 @@
+Student,Jack,Smith,117,-1,Sunshine Dr.,Los Angeles,CA,90012,jsmith@school.edu,freshman
+PhoneNumber,Cell,555,555,5555
+PhoneNumber,Home,777,777,7777
+Person,Chris,Ho,3864,-1,Rio Hondo Ave.,Rosemead,California,91770,god@dammit.com
+PhoneNumber,House,626,272,1868
+Person,Jessie,Know,7823,-1,Cal go Ave.,San Gab,Arizon,23450,99Bunny@earthlink.com
+PhoneNumber,Cell,323,123,3456
+PhoneNumber,Work,909,127,6453
+Employee,Abby,Gal,1234,-1,OK Blvd.,OK city,TX,63421,123@gmail.com,20100,SH-309a
+PhoneNumber,Work Cell,675,321,5421
+PhoneNumber,Personal Cell,268,333,5555
+Employee,Garry,Facts,678,23,Sesame ST,New York City,New York,78002,work@gmail.com,30000,ET-01
+PhoneNumber,Home,111,321,5421
+PhoneNumber,Personal Cell,222,333,5555
+Faculty,A,Dell,7823,3,First St.,Seattle,Washington,10008,comisaDell@hotmail.com,19876,BIO-210,9am-3pm,Full time
+PhoneNumber,Home,897,751,3333
+Faculty,Bill,Burr,1234,23,State Street,Los Angeles,CA,90023,mmpodcast@gmail.com,60078,SH-309a,9am-12pm,part time
+PhoneNumber,Work,909,127,6453
+PhoneNumber,Home,555,751,3333
+PhoneNumber,Personal Cell,235,333,5555
+Staff,Jesus,Christ,1234,23,State Street,Los Angeles,CA,90023,NotReal@yahoo.com,10000000,Cloud 9,Professional Sinner
+PhoneNumber,Godline,001,604,0911
+Staff,Brian,Regan,7823,3,First St.,Seattle,Washington,10008,NotReal@yahoo.com,75000,Broom Closet 09,Janitor
+PhoneNumber,Home,999,999,0028
+PhoneNumber,Work,112,421,8872
+Student,Ok,Go,678,23,Sesame ST,New York City,New York,78002,god@dammit.com,Senior
+PhoneNumber,Home,897,751,3333
+PhoneNumber,Work,909,127,6453
+PhoneNumber,Job,800,678,4321
+Student,Carol,Smith,1234,-1,OK Blvd.,OK city,TX,63421,Carol@dammit.com,Junior
+PhoneNumber,WorkCell,675,321,5421
